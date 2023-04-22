@@ -28,7 +28,7 @@ function Navbar() {
             target="_blank"
             className="mr-5 hover:text-gray-900"
           >
-            About
+            About Us
           </a>
           <a
             rel="noreferrer"
@@ -36,7 +36,7 @@ function Navbar() {
             target="_blank"
             className="mr-5 hover:text-gray-900"
           >
-            Third Link
+            Book Now
           </a>
           <a
             rel="noreferrer"
@@ -44,11 +44,11 @@ function Navbar() {
             target="_blank"
             className="mr-5 hover:text-gray-900"
           >
-            Fourth Link
+            Learn
           </a>
         </nav>
-        <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Button
+        {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
+          Find Stadiums
           <svg
             fill="none"
             stroke="currentColor"
@@ -60,7 +60,7 @@ function Navbar() {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button>
+        </button> */}
       </div>
     </header>
   );
