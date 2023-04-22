@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Faq from './Components/Faq';
 import Footer from './Components/Footer';
+import GroundListing from './Components/GroundListing';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
             <Navbar />
             <Hero />
             <Faq />
-            {/* <GroundListing /> */}
+            <GroundListing />
             <Footer />  
           </Route>
       </Switch>

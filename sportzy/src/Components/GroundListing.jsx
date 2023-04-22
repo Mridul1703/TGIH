@@ -1,7 +1,69 @@
+import { useState } from 'react';
+import statecity from '../Data/StateCity.json';
+import sport from '../Data/SportsList.json';
+
 function GroundListing() {
+  const [stateId, setstateId] = useState('');
+  const [city, setcity] = useState([]);
+  const [cityId, setcityId] = useState('');
+
+  const handlestate=(e)=>{
+    const getstateId = e.target.value;
+    const getcitydata = statecity.find(state => state.state_code===getstateId).cities;
+    setcity(getcitydata);
+  }
+
+  const handlecity=(e)=>{
+    const getcityId = e.target.value;
+  }
+
+  const handlesports=(e)=>{
+    const getsportsId = e.target.value;
+    const getsports = sport.find(sport => sport).sports_name;
+  }
+
     return (
         <>
-<section class="text-gray-600 body-font">
+<div class="relative inline-block text-left mx-5">
+      <form method="POST" action="#" role="none">
+      <select name='state' style={{backgroundColor: "#36454F"}} className='text-white text-center p-2  rounded m-3' id='state' onChange={(e) => handlestate(e)}>
+              <option value=''>Select a State</option>
+
+              {statecity.map((getstate, index) => (
+                <option value={getstate.state_code} key={index}>{getstate.state_name}</option>
+              ))}
+
+            </select>
+      </form>
+    </div>
+
+  <div class="relative inline-block text-left">
+      <form method="POST" action="#" role="none">
+      <select name='city' id='city' onChange={(e) => handlecity(e)}>
+              <option value={''}>Select a City</option>
+
+              {city.map((getcity, index) => (
+                <option value={getcity.city_code} key={index}>{getcity.city_name}</option>
+              ))}
+
+            </select>
+      </form>
+    </div>
+
+  <div class="relative inline-block text-left">
+      <form method="POST" action="#" role="none">
+      <select name='sports' id='sports' onChange={(e) => handlesports(e)}>
+              <option value={''}>Select a Sport</option>
+
+              {sport.map((getsports, index) => (
+                <option value={getsports.sports_id} key={index}>{getsports.sports_name}</option>
+              ))}
+
+            </select>
+      </form>
+    </div>
+
+{/* <section class="text-gray-600 body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       <div class="p-4 md:w-1/3">
@@ -36,7 +98,7 @@ function GroundListing() {
       </div>
     </div>
 </div>
-</section>
+</section> */}
 </>
     );
 }
