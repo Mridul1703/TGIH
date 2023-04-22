@@ -11,9 +11,5 @@ module.exports = {
     trailingComma: "es5",
     tabWidth: 4,
     semi: false,
-<<<<<<< HEAD
     singleQuote: true,
-=======
-    singleQuote: true,
->>>>>>> anmol
 };
