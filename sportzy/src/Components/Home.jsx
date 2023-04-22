@@ -5,14 +5,12 @@ import statecity from "../Data/StateCity.json";
 
 function Home() {
   const state = useState();
-  // const city = useState();
   const sport = useState();
   const [city, setcity] = useState([]);
   const ref = collection(firestore, "stadium");
 
   const handleSave = async (e) => {
     e.preventDefault();
-    // console.log(getstateId);
     let data = {
       statename: state.current.value,
       cityname: city.current.value,
