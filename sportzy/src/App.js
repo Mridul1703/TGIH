@@ -3,6 +3,7 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
+import StadiumListing from "./Components/StadiumListing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
