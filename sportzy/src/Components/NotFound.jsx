@@ -13,7 +13,7 @@ function NotFound() {
                 to go.
               </p>
               <a href="/stadiums" className="mt-4 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-                Stadiums near me
+                Home Page
               </a>
             </div>
           </div>

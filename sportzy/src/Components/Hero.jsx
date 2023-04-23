@@ -3,7 +3,7 @@ import hero_image from "../static/hero_image.jpg";
 function Hero() {
   return (
     <>
-      <section className=" px-5 text-gray-600 body-font">
+      <section className=" px-5 pt-16 text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             <img
@@ -33,9 +33,9 @@ function Hero() {
               <a href="/stadiums" className="transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Stadiums near me
               </a>
-              <button className="mx-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 inline-flex bg-gray-100 text-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
+              {/* <button className="mx-5 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 inline-flex bg-gray-100 text-gray-700 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                 Players near me
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
