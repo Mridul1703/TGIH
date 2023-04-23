@@ -15,7 +15,7 @@ function Faq() {
         <div class="max-w-5xl mx-auto">
           <div class="text-center mb-24">
             <span class="inline-block py-1 px-3 mb-4 text-xs font-semibold text-indigo-600 bg-indigo-50 rounded-full">
-              FREQUENTLY ASK QUESTION
+              FREQUENTLY ASKED QUESTIONS
             </span>
             <h1 class="font-heading text-5xl xs:text-6xl md:text-7xl font-bold text-gray-900">
               <span>
@@ -114,10 +114,7 @@ function Faq() {
                   How do I book a stadium?
                 </h3>
                 <p class="hidden group-hover:block mt-3 text-lg text-gray-500">
-                  Pretium ac auctor quis urna orci feugiat. Vulputate tellus
-                  velit tellus orci auctor vel nulla facilisi ut. Ante nunc
-                  risus viverra vivamus. Eros amet at lectus ac ac nibh
-                  dignissim.
+                  You can book a stadium by clicking on the book now button on the stadium page. Select a stadium by entering the details of your State, City and the game that you want to play.
                 </p>
               </div>
               <div class="pt-1">

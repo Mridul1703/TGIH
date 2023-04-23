@@ -1,41 +1,59 @@
-import './App.css';
-import Navbar from './Components/Navbar';
-import Hero from './Components/Hero';
-import Faq from './Components/Faq';
-import Footer from './Components/Footer';
-import GroundListing from './Components/GroundListing';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Home from './Components/Home';
-import NotFound from './Components/NotFound';
+import "./App.css";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import Faq from "./Components/Faq";
+import Footer from "./Components/Footer";
+import GroundListing from "./Components/GroundListing";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Components/StadiumSearch";
+import NotFound from "./Components/NotFound";
+import AboutUs from "./Components/AboutUs";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
     <>
-       <Router>
-      <Switch>
-        <Route exact path='/'>
+      <Router>
+        <Switch>
+          <Route exact path="/">
             <Navbar />
             <Hero />
             <Faq />
-            <Footer />  
+            <Footer />
           </Route>
 
-        <Route exact path='/stadiums'>
-          <Navbar />
-          <GroundListing />
-          <Footer />
-        </Route>
+          <Route exact path="/stadiums">
+            <Navbar />
+            <Home></Home>
+            {/* <GroundListing /> */}
+            <Footer />
+          </Route>
 
-      <Route exact path='/fire'>
-      <Navbar></Navbar>
-      <Home></Home>
-      <Footer></Footer>
-      </Route>
-      <Route exact path='*'>
-      <NotFound></NotFound>
-      </Route>
-      </Switch>
-    </Router>
+          <Route exact path="/fire">
+            <Navbar></Navbar>
+            <Home></Home>
+            <Footer></Footer>
+          </Route>
+          <Route exact path="/about-us">
+            <Navbar />
+            <AboutUs />
+            <Footer />
+            
+          </Route>
+          <Route exact path="/profile">
+            <Navbar />
+            <Profile />
+            <Footer />
+            
+          </Route>
+          <Route exact path="*">
+            <Navbar />
+            <NotFound />
+            <Footer />
+            
+          </Route>
+        </Switch>
+      </Router>
     </>
   );
 }
