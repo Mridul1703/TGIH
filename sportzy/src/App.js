@@ -25,7 +25,6 @@ function App() {
           <Route exact path="/stadiums">
             <Navbar />
             <Home></Home>
-            {/* <GroundListing /> */}
             <Footer />
           </Route>
 
@@ -34,23 +33,10 @@ function App() {
             <Home></Home>
             <Footer></Footer>
           </Route>
-          <Route exact path="/about-us">
-            <Navbar />
-            <AboutUs />
-            <Footer />
-            
-          </Route>
-          <Route exact path="/profile">
-            <Navbar />
-            <Profile />
-            <Footer />
-            
-          </Route>
           <Route exact path="*">
             <Navbar />
             <NotFound />
             <Footer />
-            
           </Route>
         </Switch>
       </Router>

@@ -46,7 +46,7 @@ function Navbar() {
           </a>
         </nav>
         <button id = "loginBtn" onClick={signInWithGoogle} className="text-white inline-flex items-center bg-indigo-600 hover:text-indigo-600 border-0 py-1 px-3 focus:outline-none hover:bg-white  rounded text-base mt-4 md:mt-0">
-          Log in 
+          Log in
           <svg
             fill="none"
             stroke="currentColor"
