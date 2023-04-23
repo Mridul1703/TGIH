@@ -47,8 +47,13 @@ function Navbar() {
             Learn
           </a>
         </nav>
-        {/* <button className="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
-          Find Stadiums
+
+        <button
+          id="loginBtn"
+          // onClick={signInWithGoogle}
+          className="text-white inline-flex items-center bg-indigo-600 hover:text-indigo-600 border-0 py-1 px-3 focus:outline-none hover:bg-white  rounded text-base mt-4 md:mt-0"
+        >
+          Log in
           <svg
             fill="none"
             stroke="currentColor"
@@ -60,7 +65,7 @@ function Navbar() {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button> */}
+        </button>
       </div>
     </header>
   );
