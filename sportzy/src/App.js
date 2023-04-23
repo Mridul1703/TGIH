@@ -5,9 +5,8 @@ import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
 import StadiumListing from "./Components/StadiumListing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/StadiumSearch";
+import StadiumSearch from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
-import SportsListing from "./Components/SportsListing";
 import Book from "./Components/Book";
 
 function App() {
@@ -24,8 +23,8 @@ function App() {
 
           <Route exact path="/stadiums">
             <Navbar />
-            <Home></Home>
-            <SportsListing />
+            <StadiumSearch />
+            <StadiumListing />
             <Footer />
           </Route>
 
@@ -35,11 +34,6 @@ function App() {
             <Footer />
           </Route>
 
-          <Route exact path="/fire">
-            <Navbar></Navbar>
-            <Home></Home>
-            <Footer></Footer>
-          </Route>
           <Route exact path="*">
             <Navbar />
             <NotFound />

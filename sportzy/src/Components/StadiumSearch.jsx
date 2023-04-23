@@ -11,7 +11,7 @@ function Logic() {
   console.log("inside Logic");
 }
 
-function Home() {
+function StadiumSearch() {
   const state = useState();
   const sport = useState();
   const [city, setcity] = useState([]);
@@ -75,4 +75,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default StadiumSearch;
