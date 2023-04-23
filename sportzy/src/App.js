@@ -3,12 +3,11 @@ import Navbar from "./Components/Navbar";
 import Hero from "./Components/Hero";
 import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
-import GroundListing from "./Components/GroundListing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
-import AboutUs from "./Components/AboutUs";
-import Profile from "./Components/Profile";
+import SportsListing from "./Components/SportsListing";
+import Book from "./Components/Book";
 
 function App() {
   return (
@@ -25,6 +24,13 @@ function App() {
           <Route exact path="/stadiums">
             <Navbar />
             <Home></Home>
+            <SportsListing />
+            <Footer />
+          </Route>
+
+          <Route exact path='/booking'>
+            <Navbar />
+            <Book />
             <Footer />
           </Route>
 
