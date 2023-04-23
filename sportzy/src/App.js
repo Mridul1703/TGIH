@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import StadiumSearch from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
 import Book from "./Components/Book";
+import AboutUs from "./Components/AboutUs";
 
 function App() {
   return (
@@ -31,6 +32,12 @@ function App() {
           <Route exact path='/booking'>
             <Navbar />
             <Book />
+            <Footer />
+          </Route>
+
+          <Route exact path='/about-us'>
+            <Navbar />
+            <AboutUs />
             <Footer />
           </Route>
 

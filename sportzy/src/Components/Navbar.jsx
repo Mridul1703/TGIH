@@ -1,5 +1,8 @@
 import logo from "../static/sportzy_logo.png";
-import { signInWithGoogle } from "../authentication";
+// import { signInWithGoogle } from "../authentication";
+ const press = () => {
+  window.alert("This feature is coming soon");
+ }
 
 function Navbar() {
   return (
@@ -30,22 +33,21 @@ function Navbar() {
           </a>
           <a
             rel="noreferrer"
-            href="https://www.google.com"
-            target="_blank"
+            href="/stadiums"
             className="mr-5 hover:text-indigo-600"
           >
             Book Now
           </a>
-          <a
+          <button
             rel="noreferrer"
-            href="https://www.google.com"
+            onClick={press}
             target="_blank"
             className="mr-5 hover:text-indigo-600"
           >
             Learn
-          </a>
+          </button>
         </nav>
-        <button id = "loginBtn" onClick={signInWithGoogle} className="text-white inline-flex items-center bg-indigo-600 hover:text-indigo-600 border-0 py-1 px-3 focus:outline-none hover:bg-white  rounded text-base mt-4 md:mt-0">
+        {/* <button id = "loginBtn" onClick={signInWithGoogle} className="text-white inline-flex items-center bg-indigo-600 hover:text-indigo-600 border-0 py-1 px-3 focus:outline-none hover:bg-white  rounded text-base mt-4 md:mt-0">
           Log in
           <svg
             fill="none"
@@ -58,7 +60,7 @@ function Navbar() {
           >
             <path d="M5 12h14M12 5l7 7-7 7"></path>
           </svg>
-        </button>
+        </button> */}
       </div>
     </header>
   );
