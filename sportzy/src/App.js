@@ -5,9 +5,10 @@ import Faq from "./Components/Faq";
 import Footer from "./Components/Footer";
 import GroundListing from "./Components/GroundListing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import SportsListing from "./Components/SportsListing";
+import Home from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
+import AboutUs from "./Components/AboutUs";
+import Profile from "./Components/Profile";
 
 function App() {
   return (
@@ -18,13 +19,12 @@ function App() {
             <Navbar />
             <Hero />
             <Faq />
-            <SportsListing />
             <Footer />
           </Route>
 
           <Route exact path="/stadiums">
             <Navbar />
-            <GroundListing />
+            <Home></Home>
             <Footer />
           </Route>
 
