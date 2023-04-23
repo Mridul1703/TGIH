@@ -7,8 +7,8 @@ import StadiumListing from "./Components/StadiumListing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Components/StadiumSearch";
 import NotFound from "./Components/NotFound";
-import AboutUs from "./Components/AboutUs";
-import Profile from "./Components/Profile";
+import SportsListing from "./Components/SportsListing";
+import Book from "./Components/Book";
 
 function App() {
   return (
@@ -25,9 +25,13 @@ function App() {
           <Route exact path="/stadiums">
             <Navbar />
             <Home></Home>
+            <SportsListing />
+            <Footer />
+          </Route>
 
-            <StadiumListing />
-
+          <Route exact path='/booking'>
+            <Navbar />
+            <Book />
             <Footer />
           </Route>
 
